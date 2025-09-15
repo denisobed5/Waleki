@@ -1,0 +1,23 @@
+{
+  "name": "Waleki - Water Level Monitoring System",
+  "short_name": "Waleki",
+  "description": "Real-time water level monitoring system for wells and water sources",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/water-drop.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["utilities", "productivity", "monitoring"],
+  "lang": "en"
+}

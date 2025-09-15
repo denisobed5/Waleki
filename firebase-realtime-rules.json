@@ -1,0 +1,22 @@
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null",
+    "devices": {
+      ".read": "auth != null",
+      ".write": "auth != null",
+      "$deviceId": {
+        ".validate": "newData.hasChildren(['name', 'location', 'status', 'settings', 'createdAt', 'updatedAt'])"
+      }
+    },
+    "readings": {
+      ".read": "auth != null",
+      ".write": "auth != null",
+      "$deviceId": {
+        "$readingId": {
+          ".validate": "newData.hasChildren(['deviceId', 'level', 'timestamp'])"
+        }
+      }
+    }
+  }
+}
